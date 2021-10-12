@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+body h1 {
+    font-size: 6rem;
+    margin: 20px 0 60px 0;
+    color: var(--color_white);
+}
+
+body h1 span {
+    font-size: 6rem;
+}
+
+body h1 span.color-blue {
+    color: var(--color_player_blue);
+}
+body h1 span.color-yellow {
+    color: var(--color_player_yellow);
+}
+body h1 span.color-brown {
+    color: var(--color_player_brown);
+}
+body h1 span.color-green {
+    color: var(--color_player_green);
+}
+body h1 span.color-purple {
+    color: var(--color_player_dark_pink);
+}
+body h1 span.color-pink {
+    color: var(--color_player_light_pink);
+}
+
+body.new_game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.new_game form {
+    display: flex;
+}
+
+body.new_game section {
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: var(--color_white);
+}
+body.new_game .new-game-wrapper {
+    margin-right: 2rem;
+    align-self: flex-start;
+}
+body.new_game .new-game-wrapper > p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color_word_font_fill);
+    text-align: center;
+}
+
+
+body.new_game .new-game-wrapper hr {
+    height: 2px;
+    margin: 20px 0;
+}
+
+body.new_game .new-game-wrapper input[type="button"] {
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+}
+body.new_game .new-game-wrapper input[type="button"]#create_new {
+    background-color: var(--color_player_blue);
+    margin-bottom: 10px;
+}
+body.new_game .new-game-wrapper input[type="button"]#join_new {
+    background-color: var(--color_player_dark_pink);
+}
+
+
+body.new_game .new-game-wrapper input[type="button"]:hover {
+    cursor: pointer;
+}
+
+
+body.new_game .new-game-wrapper .pseudo-choice {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+body.new_game .new-game-wrapper .pseudo-choice label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color_word_font_fill)
+}
+
+body.new_game .new-game-wrapper .pseudo-choice input {
+    padding: 1rem 2rem;
+    border: 2px solid var(--color_word_default);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color_word_font_fill);
+    outline: none;
+    margin: 10px 0;
+}

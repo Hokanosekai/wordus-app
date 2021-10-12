@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordus App v1.0.0</title>
+
+        <link rel="stylesheet" href="./css/master.css">
+    </head>
+    <body class="new_game">
+
+    <h1><span class="color-yellow">W</span><span class="color-pink">O</span><span class="color-brown">R</span><span class="color-green">D</span><span class="color-blue">U</span><span class="color-purple">S</span>.xyz</h1>
+
+    <div id="create_party">
+        <section class="new-game-wrapper">
+
+            <input type="button" id="create_new" value="Créer une partie !">
+
+            <hr>
+
+
+            <div class="pseudo-choice">
+                <input placeholder="Liens de la partie" id="name" type="text">
+            </div>
+
+
+            <input type="button" id="join_new" value="Rejoindre la partie">
+
+        </section>
+    </div>
+
+    <script>
+        const newg = document.getElementById('create_new')
+        newg.addEventListener('click', () => {
+            console.log('TEST')
+            window.location.replace('https://wordus.xyz')
+        })
+
+        const joing = document.getElementById('join_new')
+        joing.addEventListener('click', () => {
+            const uri = document.getElementById('name').value
+
+            window.location.replace(uri)
+        })
+    </script>
+
+    </body>
+</html>
